@@ -255,7 +255,7 @@ class DraggableMobileActions extends StatelessWidget {
                         ),
 			      
                           //添加两个按钮 
-                  			IconButton(
+                  			  /* IconButton(
                             color: Colors.white,
                             onPressed: onScreenMaskPressed,
                             splashRadius: kDesktopIconButtonSplashRadius,
@@ -263,7 +263,7 @@ class DraggableMobileActions extends StatelessWidget {
                             iconSize: 24 * scale),
                         
                         
-                    		       /* Container(
+                    		      Container(
                     			  width: 220.0, // Set the desired width here
                     			  child: TextField(
                     			   // 将 TextEditingController 关联到 TextField
