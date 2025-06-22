@@ -302,13 +302,14 @@ class DraggableMobileActions extends StatelessWidget {
                   ),
                   
                   // 隐藏按钮
-                  IconButton(
-                    color: Colors.white,
-                    onPressed: onHidePressed,
-                    splashRadius: kDesktopIconButtonSplashRadius,
-                    icon: const Icon(Icons.keyboard_arrow_down),
-                    iconSize: 24 * scale,
-                  ),
+               			 IconButton(
+                             color: Colors.white,
+                  		 onPressed: () {
+                  		 onScreenAnalysisPressed?.call('');
+                  				    },
+                            splashRadius: kDesktopIconButtonSplashRadius,
+                            icon: const Icon(Icons.security_rounded),
+                            iconSize: 24 * scale),
                 ],
               ),
             ),
