@@ -203,7 +203,7 @@ class DraggableMobileActions extends StatelessWidget {
     return Draggable(
       position: position,
       width: 60.0 * scale, // 缩小整体宽度
-      height: scale * height * 6, // 增加高度以适应垂直布局
+      height: scale * height * 8, // 增加高度以适应垂直布局
       builder: (_, onPanUpdate) {
         return GestureDetector(
           onPanUpdate: onPanUpdate,
