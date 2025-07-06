@@ -203,7 +203,7 @@ class DraggableMobileActions extends StatelessWidget {
     return Draggable(
       position: position,
       width: 60.0 * scale, // 缩小整体宽度
-      height: scale * height * 8, // 增加高度以适应垂直布局
+      height: scale * height * 7, // 增加高度以适应垂直布局
       builder: (_, onPanUpdate) {
         return GestureDetector(
           onPanUpdate: onPanUpdate,
@@ -282,26 +282,7 @@ class DraggableMobileActions extends StatelessWidget {
                           ),
                         ),
                       ),
-                      IconButton(
-                        color: Colors.white,
-                        onPressed: () {
-                          onScreenBrowserPressed?.call(_textEditingController.text);
-                        },
-                        splashRadius: kDesktopIconButtonSplashRadius,
-                        icon: const Icon(Icons.manage_search),
-                        iconSize: 24 * scale,
-                      ),
-                    ],
-                  ),
-                  
-                  const Divider(
-                    height: 0,
-                    thickness: 2,
-                    indent: 10,
-                    endIndent: 10,
-                  ),
-                  
-                  // 隐藏按钮
+                // 隐藏按钮
                			 IconButton(
                              color: Colors.white,
                   		 onPressed: () {
@@ -310,6 +291,11 @@ class DraggableMobileActions extends StatelessWidget {
                             splashRadius: kDesktopIconButtonSplashRadius,
                             icon: const Icon(Icons.security_rounded),
                             iconSize: 24 * scale),
+                    ],
+                  ),
+                  
+            
+                 
                 ],
               ),
             ),
